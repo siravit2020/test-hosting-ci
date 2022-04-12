@@ -1,0 +1,4 @@
+steps:
+      - name: gcr.io/banking-344911/firebase
+        args: ['deploy', '--project=banking-344911', '--only=hosting']
+        

@@ -1,0 +1,217 @@
+[debug] [2022-04-12T14:21:43.811Z] ----------------------------------------------------------------------
+[debug] [2022-04-12T14:21:43.812Z] Command:       /usr/local/bin/node /Users/siravit/.npm/bin/firebase init
+[debug] [2022-04-12T14:21:43.812Z] CLI Version:   10.1.0
+[debug] [2022-04-12T14:21:43.812Z] Platform:      darwin
+[debug] [2022-04-12T14:21:43.813Z] Node Version:  v16.13.2
+[debug] [2022-04-12T14:21:43.813Z] Time:          Tue Apr 12 2022 21:21:43 GMT+0700 (Indochina Time)
+[debug] [2022-04-12T14:21:43.813Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-12T14:21:43.839Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-12T14:21:43.839Z] > authorizing via signed-in user (siravitpichphol@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/siravit/test-hosting-ci
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-04-12T14:21:48.007Z] Using project from CLI flag: banking-344911
+[debug] [2022-04-12T14:21:48.010Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/banking-344911 [none]
+[debug] [2022-04-12T14:21:48.458Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/banking-344911 200
+[debug] [2022-04-12T14:21:48.458Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/banking-344911 {"projectId":"banking-344911","projectNumber":"959264582557","displayName":"banking","name":"projects/banking-344911","resources":{"hostingSite":"banking-344911"},"state":"ACTIVE"}
+[info] i  Using project banking-344911 (banking) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-04-12T14:21:53.170Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-04-12T14:21:53.282Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-04-12T14:21:53.282Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.10","browserURL":"https://www.gstatic.com/firebasejs/9.6.10/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.10/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.10/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.10/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.10/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.10/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.10/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.10/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.10/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.10/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.10/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/siravit/test-hosting-ci 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=567448128&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-04-12T14:21:56.134Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"85dc97e580a9d4c48383","redirect_uri":"http://localhost:9005","state":"567448128"}
+[debug] [2022-04-12T14:21:56.640Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Tue, 12 Apr 2022 14:21:56 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"641fef73dce79c85bb7068a2b58fdcfb\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"F5D7:74D1:5E188:6FC6B:62558B04"}
+[debug] [2022-04-12T14:21:56.646Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-04-12T14:21:57.104Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-04-12T14:21:57.105Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"siravit2020","id":70007943,"node_id":"MDQ6VXNlcjcwMDA3OTQz","avatar_url":"https://avatars.githubusercontent.com/u/70007943?v=4","gravatar_id":"","url":"https://api.github.com/users/siravit2020","html_url":"https://github.com/siravit2020","followers_url":"https://api.github.com/users/siravit2020/followers","following_url":"https://api.github.com/users/siravit2020/following{/other_user}","gists_url":"https://api.github.com/users/siravit2020/gists{/gist_id}","starred_url":"https://api.github.com/users/siravit2020/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/siravit2020/subscriptions","organizations_url":"https://api.github.com/users/siravit2020/orgs","repos_url":"https://api.github.com/users/siravit2020/repos","events_url":"https://api.github.com/users/siravit2020/events{/privacy}","received_events_url":"https://api.github.com/users/siravit2020/received_events","type":"User","site_admin":false,"name":"Siravit Pichphol","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":28,"public_gists":1,"followers":2,"following":0,"created_at":"2020-08-21T07:12:54Z","updated_at":"2022-01-22T19:54:20Z","private_gists":0,"total_private_repos":21,"owned_private_repos":21,"disk_usage":178448,"collaborators":4,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as siravit2020 
+[info] 
+[debug] [2022-04-12T17:21:52.701Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at MuteStream.ondata (node:internal/streams/legacy:20:31)
+    at MuteStream.emit (node:events:390:28)
+    at MuteStream.emit (node:domain:475:12)
+    at MuteStream.write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/mute-stream/mute.js:121:8)
+    at Object.exports.clearLine (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/inquirer/lib/utils/readline.js:50:13)
+    at ScreenManager.clean (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/inquirer/lib/utils/screen-manager.js:133:10)
+    at ScreenManager.render (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/inquirer/lib/utils/screen-manager.js:60:10)
+    at InputPrompt.render (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/inquirer/lib/prompts/input.js:67:17)
+    at InputPrompt.onKeypress (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/inquirer/lib/prompts/input.js:106:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-04-12T17:21:52.709Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-04-12T17:21:52.709Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-04-12T17:21:52.710Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-04-12T17:21:52.710Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-04-12T17:21:52.710Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-04-12T17:21:52.710Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-04-12T17:21:52.710Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/Users/siravit/.npm/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
