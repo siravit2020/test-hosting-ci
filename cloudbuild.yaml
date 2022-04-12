@@ -1,4 +1,10 @@
 steps:
-      - name: gcr.io/banking-344911/firebase
-        args: ['deploy', '--project=banking-344911', '--only=hosting']
+  - name: 'node:12'
+    entrypoint: 'npm'
+    args: ['install']
+  - name: 'node:12'
+    entrypoint: 'npm'
+    args: ['build']
+  - name: gcr.io/banking-344911/firebase
+    args: ['deploy', '--project=banking-344911', '--only=hosting']
         
