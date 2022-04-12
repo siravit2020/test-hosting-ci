@@ -4,7 +4,7 @@ steps:
     args: ['install']
   - name: 'node:12'
     entrypoint: 'npm'
-    args: ['build']
+    args: ['run build']
   - name: gcr.io/banking-344911/firebase
     args: ['deploy', '--project=banking-344911', '--only=hosting']
         
